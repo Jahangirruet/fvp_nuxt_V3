@@ -1233,7 +1233,7 @@
         </div>
       </section>
       <!-- start coding for Questions section  -->
-      <section class="sm:px-4 pb-8 sm:pb-14 pt-14 lg:pt-20 overflow-x-clip">
+      <!-- <section class="sm:px-4 pb-8 sm:pb-14 pt-14 lg:pt-20 overflow-x-clip">
         <div class="container mx-auto space-y-12">
           <h2
             class="text-[28px] lg:text-[2.6rem] leading-[1.3] font-fredoka text-black text-center"
@@ -1264,7 +1264,8 @@
                   <button
                     type="button"
                     class="accordion-btn px-3 sm:px-6 py-3 gap-4 w-full rounded-3xl bg-white border border-green-300 flex justify-between items-center"
-                  >
+                    @click="clickAccordion(0)"
+                    >
                     <span class="font-bold text-base xl:text-lg text-black">
                       What is Forex VPS?
                     </span>
@@ -1327,7 +1328,8 @@
                   <button
                     type="button"
                     class="accordion-btn px-3 sm:px-6 py-3 gap-4 w-full rounded-3xl bg-white border border-green-300 flex justify-between items-center"
-                  >
+                    @click="clickAccordion(1)"
+                    >
                     <span class="font-bold text-base xl:text-lg text-black">
                       I have no technical skill, can you help me for setup ?
                     </span>
@@ -1390,7 +1392,8 @@
                   <button
                     type="button"
                     class="accordion-btn px-3 sm:px-6 py-3 gap-4 w-full rounded-3xl bg-white border border-green-300 flex justify-between items-center"
-                  >
+                    @click="clickAccordion(2)"
+                    >
                     <span class="font-bold text-base xl:text-lg text-black">
                       How long does it take to setup my account?
                     </span>
@@ -1449,7 +1452,8 @@
                   <button
                     type="button"
                     class="accordion-btn px-3 sm:px-6 py-3 gap-4 w-full rounded-3xl bg-white border border-green-300 flex justify-between items-center"
-                  >
+                    @click="clickAccordion(3)"
+                    >
                     <span class="font-bold text-base xl:text-lg text-black">
                       What type of payment do you accept ?
                     </span>
@@ -1506,7 +1510,8 @@
                   <button
                     type="button"
                     class="accordion-btn px-3 sm:px-6 py-3 gap-4 w-full rounded-3xl bg-white border border-green-300 flex justify-between items-center"
-                  >
+                    @click="clickAccordion(4)"
+                    >
                     <span class="font-bold text-base xl:text-lg text-black">
                       Can I upgrade my plan later?
                     </span>
@@ -1563,7 +1568,8 @@
                   <button
                     type="button"
                     class="accordion-btn px-3 sm:px-6 py-3 gap-4 w-full rounded-3xl bg-white border border-green-300 flex justify-between items-center"
-                  >
+                    @click="clickAccordion(5)"
+                    >
                     <span class="font-bold text-base xl:text-lg text-black">
                       What is the advantages of using fx VPS over PC ?
                     </span>
@@ -1620,7 +1626,427 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
+      <section
+              class="sm:px-4 pb-8 sm:pb-14 pt-14 lg:pt-20 overflow-x-clip"
+            >
+              <div class="container mx-auto space-y-12">
+                <h2
+                  class="text-[28px] lg:text-[2.6rem] leading-[1.3] font-fredoka text-black text-center"
+                >
+                  Frequently Asked
+                  <span
+                    class="bg-clip-text bg-gradient-to-r from-primary to-secondary text-transparent"
+                  >
+                    Questions</span
+                  >
+                </h2>
+                <div
+                  class="px-4 py-10 xl:pl-14 lg:pr-16 xl:pr-24 md:py-20 sm:rounded-[3rem] bg-opacity-50 bg-white border border-gray-300 relative"
+                >
+                  <figure
+                    class="flex justify-center md:absolute md:-top-20 md:-right-20 pb-8 md:pb-0"
+                  >
+                    <img
+                      src="~/assets/images/chat-dynamic-color.png"
+                      alt="chat-dynamic-color.png"
+                      height="170"
+                      width="170"
+                    />
+                  </figure>
+                  <div
+                    class="w-full flex-col lg:flex-row flex gap-4 xl:gap-x-8 xl:gap-y-4 items-start"
+                  >
+                    <div class="grid gap-1 w-full lg:w-1/2">
+                      <div class="group space-y-4">
+                        <button
+                          type="button"
+                          class="accordion-btn0 px-3 sm:px-6 py-3 gap-4 w-full rounded-3xl bg-white border border-green-300 flex justify-between items-center"
+                          @click="clickAccordion(0)"
+                        >
+                          <span
+                            class="font-bold text-base xl:text-lg text-black"
+                          >
+                            What is Forex VPS?
+                          </span>
+                          <span class="">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-minus hidden group-[.open]:block"
+                            >
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-plus group-[.open]:hidden"
+                            >
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </span>
+                        </button>
+                        <div
+                          class="overflow-hidden transition-all duration-300 max-h-0"
+                        >
+                          <div
+                            class="rounded-3xl border border-gray-300 bg-white p-8 mb-3"
+                          >
+                            <p class="text-base md:text-lg text-black">
+                              The term “FOREX VPS” involves a virtual private
+                              server system that is mainly applied in forex
+                              trading. Basically, these servers host MT4/MT5
+                              trading platforms 24/7 uninterruptedly. In forex
+                              VPS service the hardware resources are allotted
+                              under a vast server arrangement. Forex servers get
+                              optimized for meta-trading & latency for
+                              conducting rigorous trading activities. VPS
+                              service providers arrange respective plans for the
+                              individual requirements based on disk space, CPU
+                              capacity, latency & much more. Dedicated server
+                              plans are very common nowadays because most of the
+                              pro traders prefer them over other server policy.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="group space-y-4">
+                        <button
+                          type="button"
+                          class="accordion-btn1 px-3 sm:px-6 py-3 gap-4 w-full rounded-3xl bg-white border border-green-300 flex justify-between items-center"
+                          @click="clickAccordion(1)"
+                        >
+                          <span
+                            class="font-bold text-base xl:text-lg text-black"
+                          >
+                            I have no technical skill, can you help me for setup
+                            ?
+                          </span>
+                          <span class="">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-minus hidden group-[.open]:block"
+                            >
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-plus group-[.open]:hidden"
+                            >
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </span>
+                        </button>
+                        <div
+                          class="overflow-hidden transition-all duration-300 max-h-0"
+                        >
+                          <div
+                            class="rounded-3xl border border-gray-300 bg-white p-8 mb-3"
+                          >
+                            <p class="text-base md:text-lg text-black">
+                              Sure, we will help u with proper guide or can make
+                              necessary setup for you via team viewer. Normally
+                              Forex VPS is very easy to use as you will be using
+                              standard Remote Desktop Program software (comes by
+                              default with every Windows edition) to connect to
+                              your VPS. We also provide video tutorials.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="group space-y-4">
+                        <button
+                          type="button"
+                          class="accordion-btn2 px-3 sm:px-6 py-3 gap-4 w-full rounded-3xl bg-white border border-green-300 flex justify-between items-center"
+                          @click="clickAccordion(2)"
+                        >
+                          <span
+                            class="font-bold text-base xl:text-lg text-black"
+                          >
+                            How long does it take to setup my account?
+                          </span>
+                          <span class="">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-minus hidden group-[.open]:block"
+                            >
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-plus group-[.open]:hidden"
+                            >
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </span>
+                        </button>
+                        <div
+                          class="overflow-hidden transition-all duration-300 max-h-0"
+                        >
+                          <div
+                            class="rounded-3xl border border-gray-300 bg-white p-8 mb-3"
+                          >
+                            <p class="text-base md:text-lg text-black">
+                              We manually review every order & manually setup
+                              every vps for best performances. So, account setup
+                              can take upto 5 mins time but usually much
+                              quicker.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid gap-1 w-full lg:w-1/2">
+                      <div class="group space-y-4">
+                        <button
+                          type="button"
+                          class="accordion-btn3 px-3 sm:px-6 py-3 gap-4 w-full rounded-3xl bg-white border border-green-300 flex justify-between items-center"
+                          @click="clickAccordion(3)"
+                        >
+                          <span
+                            class="font-bold text-base xl:text-lg text-black"
+                          >
+                            What type of payment do you accept ?
+                          </span>
+                          <span class="">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-minus hidden group-[.open]:block"
+                            >
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-plus group-[.open]:hidden"
+                            >
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </span>
+                        </button>
+                        <div
+                          class="overflow-hidden transition-all duration-300 max-h-0"
+                        >
+                          <div
+                            class="rounded-3xl border border-gray-300 bg-white p-8 mb-3"
+                          >
+                            <p class="text-base md:text-lg text-black">
+                              We accept Paypal, Neteller, Skrill, Webmoney,
+                              Perfect Money, Payza, VISA/Mastercard .
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="group space-y-4">
+                        <button
+                          type="button"
+                          class="accordion-btn4 px-3 sm:px-6 py-3 gap-4 w-full rounded-3xl bg-white border border-green-300 flex justify-between items-center"
+                          @click="clickAccordion(4)"
+                        >
+                          <span
+                            class="font-bold text-base xl:text-lg text-black"
+                          >
+                            Can I upgrade my plan later?
+                          </span>
+                          <span class="">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-minus hidden group-[.open]:block"
+                            >
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-plus group-[.open]:hidden"
+                            >
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </span>
+                        </button>
+                        <div
+                          class="overflow-hidden transition-all duration-300 max-h-0"
+                        >
+                          <div
+                            class="rounded-3xl border border-gray-300 bg-white p-8 mb-3"
+                          >
+                            <p class="text-base md:text-lg text-black">
+                              Yes. All accounts can be upgraded any time .Just
+                              write an email to support@fxvps.pro with the plan
+                              to which you want to upgrade your Forex VPS.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="group space-y-4">
+                        <button
+                          type="button"
+                          class="accordion-btn5 px-3 sm:px-6 py-3 gap-4 w-full rounded-3xl bg-white border border-green-300 flex justify-between items-center"
+                          @click="clickAccordion(5)"
+                        >
+                          <span
+                            class="font-bold text-base xl:text-lg text-black"
+                          >
+                            What is the advantages of using fx VPS over PC ?
+                          </span>
+                          <span class="">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-minus hidden group-[.open]:block"
+                            >
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-plus group-[.open]:hidden"
+                            >
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                          </span>
+                        </button>
+                        <div
+                          class="overflow-hidden transition-all duration-300 max-h-0"
+                        >
+                          <div
+                            class="rounded-3xl border border-gray-300 bg-white p-8 mb-3"
+                          >
+                            <p class="text-base md:text-lg text-black">
+                              There are many advantages of using Forex VPS but
+                              here is the list of the most important ones:
+                            </p>
+                            <p class="text-base md:text-lg text-black">
+                              Internet Connection Stability - Our VPS solution
+                              offers a professional setup. We have a high grade
+                              Internet connection and multiple backup
+                              connections in case one or more go down. In
+                              comparison a Home Internet connection has no
+                              backup and can vary in reliability.
+                            </p>
+                            <p class="text-base md:text-lg text-black">
+                              Power Consumption - Our VPS solution offers a
+                              professional setup. We have a high grade Internet
+                              connection and multiple backup connections in case
+                              one or more go down. In comparison a Home Internet
+                              connection has no backup and can vary in
+                              reliability.
+                            </p>
+                            <p class="text-base md:tsext-lg text-black">
+                              Keep your PC desktop tidy - If you run your
+                              MT4/mt5 on your PC you will always have the
+                              terminal on the desktop. This can be annoying and
+                              also you could mistakenly close the terminal while
+                              closing other applications. With a VPS it is out
+                              of site unless you have your RDP connection
+                              running. Access from anywhere - You can remotely
+                              access your VPS from anywhere you have an Internet
+                              connection
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
       <!-- start coding for Everything You Should Know About Foxex VPS section  -->
       <section
         class="px-4 pb-8 sm:pb-12 pt-14 lg:pt-16 overflow-x-clip relative"
@@ -1887,55 +2313,73 @@
   </NuxtLayout>
 </template>
 <script>
+//import customjs from './custom'
 export default {
-  name: "IndexPage",
+  name: 'IndexPage',
   head() {
     return {
-      title: "Forex VPS - Best FX VPS Provider",
+      title: 'Forex VPS - Best FX VPS Provider',
       script: [
         {
-          src: "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js",
+          src: 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js',
         },
       ],
-    };
+      //customjs,
+    }
   },
   data() {
-    return {};
+    return {}
   },
   mounted() {
-    const swiper = new Swiper(".banner", {
+    const swiper = new Swiper('.banner', {
       autoplay: {
         delay: 5000,
       },
       pagination: {
-        el: ".swiper-pagination",
+        el: '.swiper-pagination',
         clickable: true,
       },
-    });
+    })
   },
   methods: {
+    openMenuDialog() {
+      let navbar = document.querySelector('#navbar')
+      let overlay = document.querySelector('.mobile-overlay')
+      overlay.classList.remove('hidden')
+      overlay.classList.add('block')
+      navbar.classList.add('active')
+    },
+    closeMenuDialog() {
+      let overlay = document.querySelector('.mobile-overlay')
+      let navbar = document.querySelector('#navbar')
+      navbar.classList.remove('active')
+      overlay.classList.remove('block')
+      overlay.classList.add('hidden')
+    },
     clickAccordion(n) {
-      let accordionheader = document.querySelectorAll(`.accordion-btn${n}`);
-      let parent = accordionheader[0].parentElement;
-      let article = accordionheader[0].nextElementSibling;
+      let accordionheader = document.querySelectorAll(`.accordion-btn${n}`)
+      let parent = accordionheader[0].parentElement
+      let article = accordionheader[0].nextElementSibling
 
       for (var i = 0; i < 6; i++) {
-        let accordion = document.querySelectorAll(`.accordion-btn${i}`);
-        let parentForAccordion = accordion[0].parentElement;
-        let articleForAccordion = accordion[0].nextElementSibling;
-        if (i == n && !parent.classList.contains("open")) {
-          parent.classList.add("open");
-          article.style.maxHeight = article.scrollHeight + 30 + "px";
-        } else if (i == n && parent.classList.contains("open")) {
-          parentForAccordion.classList.remove("open");
-          articleForAccordion.style.maxHeight = "0px";
+        let accordion = document.querySelectorAll(`.accordion-btn${i}`)
+        let parentForAccordion = accordion[0].parentElement
+        let articleForAccordion = accordion[0].nextElementSibling
+        if (i == n && !parent.classList.contains('open')) {
+          parent.classList.add('open')
+          article.style.maxHeight = article.scrollHeight + 30 + 'px'
+        } else if (i == n && parent.classList.contains('open')) {
+          parentForAccordion.classList.remove('open')
+          articleForAccordion.style.maxHeight = '0px'
         }
-        if (i != n && parent.classList.contains("open")) {
-          parentForAccordion.classList.remove("open");
-          articleForAccordion.style.maxHeight = "0px";
+        if (i != n && parent.classList.contains('open')) {
+          parentForAccordion.classList.remove('open')
+          articleForAccordion.style.maxHeight = '0px'
         }
       }
     },
   },
-};
+}
 </script>
+
+<style lang="scss" scoped></style>
