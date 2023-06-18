@@ -1,5 +1,7 @@
 <template>
   <div>
+    <div class="sticky">I will stick to the screen when you reach my scroll position</div>
+
     <div class="py-3 sm:py-4 bg-gradient-to-r from-primary to-secondary px-4">
       <div class="container mx-auto">
         <div
@@ -261,3 +263,7 @@ export default {
   },
 };
 </script>
+
+<style>
+
+</style>

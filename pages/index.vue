@@ -1648,7 +1648,7 @@
                     class="flex justify-center md:absolute md:-top-20 md:-right-20 pb-8 md:pb-0"
                   >
                     <img
-                      src="~/assets/images/chat-dynamic-color.png"
+                      src="../assets/images/chat-dynamic-color.png"
                       alt="chat-dynamic-color.png"
                       height="170"
                       width="170"
@@ -2313,7 +2313,6 @@
   </NuxtLayout>
 </template>
 <script>
-//import customjs from './custom'
 export default {
   name: 'IndexPage',
   head() {
@@ -2324,7 +2323,6 @@ export default {
           src: 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js',
         },
       ],
-      //customjs,
     }
   },
   data() {
